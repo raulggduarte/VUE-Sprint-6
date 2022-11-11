@@ -9,7 +9,7 @@
           :key="index"
           :class="{ active: index === sentenceNumber}"
           >
-          {{ frase }}
+          {{ frase['txt'] }}
         </li>
       </ul>
     </div>
@@ -20,7 +20,7 @@
   export default {
     name: 'EscenaItem',
     props: {
-      sentencesArray: [],
+      sentencesArray: Array,
       sentenceNumber: Number,
     },
     data(){
@@ -35,26 +35,25 @@
   </script>
   
 
-  <style scoped lang="scss">
-    div {
-  
-      & ul {
-        list-style: none;
-        padding: 0;
-        
-        & li {
-          text-align: center;
-          font-size: small;
-          margin: 10px;
-          padding: 10px;
-          border: 2px solid black;
-          border-radius: 20px;
-        }
+  <style lang="scss">
+    ul {
+      list-style: none;
+      padding: 0;
+      
+      & li {
+        text-align: center;
+        font-size: small;
+        margin: 10px;
+        padding: 10px;
+        border: 2px solid black;
+        border-radius: 20px;
+        background-color: rgba($color: #ffffff, $alpha: 0.8);
       }
     }
 
     .active {
       background-color: pink;
     }
+
   </style>
   
