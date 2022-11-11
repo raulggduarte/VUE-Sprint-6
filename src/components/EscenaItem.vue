@@ -26,7 +26,8 @@
     data(){
       return {
         /*level 1 code:
-        msg: "El nostre heroi estava surant per l'espai sideral quan a la llunyania va albirar una nau espacial",
+        msg: "El nostre heroi estava surant per l'espai 
+        sideral quan a la llunyania va albirar una nau espacial",
         */
       }
     },
